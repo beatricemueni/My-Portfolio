@@ -1,0 +1,15 @@
+.header-content {
+  display: flex;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+ul{
+  list-style: none;
+}
+
+.social-links li ::before{
+ content: '\2713';
+}
