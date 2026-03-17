@@ -1,7 +1,10 @@
 .header-content {
   display: flex;
+  justify-content: right;
 }
-
+.header-content div{
+    margin-right:auto;
+}
 .social-links {
   display: flex;
   gap: 10px;
@@ -10,6 +13,67 @@ ul{
   list-style: none;
 }
 
+.social-links li ::before
+{
+ content: '\2713';
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li ::before{
+ content: '\2713';
+}
+
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .social-links li ::before{
  content: '\2713';
+}
+
+.social-links li{
+  align-items: right;
+}
+
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding:40px;
+}
+
+.profile-image{
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius:50%
+}
+
+.text-section {
+text-align: center;
+max-width: 400px
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
 }
