@@ -20,25 +20,11 @@ a {
   color: inherit;
 }
 
-/* ═══════════════════════════════════════════════════════════════════
-   2. PAGE CONTAINER
-   ═══════════════════════════════════════════════════════════════════
-   The page shell keeps content centered and stops lines from
-   becoming too wide on large screens.
-*/
-
 .page-shell {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 0 24px;
 }
-
-/* ═══════════════════════════════════════════════════════════════════
-   3. HEADER
-   ═══════════════════════════════════════════════════════════════════
-   Flexbox places the email on one side and the links on the other.
-   We also allow wrapping so the links do not break the layout.
-*/
 
 .site-header {
   display: flex;
@@ -63,15 +49,9 @@ a {
 
 .social-nav ul {
   gap: 20px;
-  flex-wrap: wrap; /* Lets links move to a new line on narrower screens */
+  flex-wrap: wrap; 
   justify-content: flex-end;
 }
-
-/* ═══════════════════════════════════════════════════════════════════
-   4. HERO SECTION
-   ═══════════════════════════════════════════════════════════════════
-   This section stacks content vertically and keeps everything centered.
-*/
 
 .hero-section {
   display: flex;
@@ -134,7 +114,7 @@ a {
 }
 
 .hero-nav {
-  width: min(100%, 720px); /* Stops the nav from getting too wide */
+  width: min(100%, 720px);
   background-color: #fff;
   padding: 12px 24px;
   border-radius: 50px;
@@ -144,7 +124,7 @@ a {
 .hero-nav ul {
   gap: 8px;
   justify-content: center;
-  flex-wrap: wrap; /* Important for tablets: menu items can wrap neatly */
+  flex-wrap: wrap; 
 }
 
 .hero-nav a {
@@ -154,13 +134,6 @@ a {
   border-radius: 50px;
   font-size: 0.95rem;
 }
-
-/* ═══════════════════════════════════════════════════════════════════
-   5. ABOUT SECTION
-   ═══════════════════════════════════════════════════════════════════
-   Grid gives us two columns on larger screens:
-   image on one side, text on the other.
-*/
 
 .about-section {
   display: grid;
@@ -180,15 +153,9 @@ a {
 }
 
 .about-text p {
-  max-width: 65ch; /* Keeps the paragraph readable instead of too wide */
+  max-width: 65ch;
   font-size: 1.05rem;
 }
-
-/* ═══════════════════════════════════════════════════════════════════
-   6. FOOTER
-   ═══════════════════════════════════════════════════════════════════
-   Footer links stay centered and can wrap if space is limited.
-*/
 
 .site-footer {
   text-align: center;
@@ -201,13 +168,6 @@ a {
   gap: 20px;
   flex-wrap: wrap;
 }
-
-/* ═══════════════════════════════════════════════════════════════════
-   7. TABLET BREAKPOINT
-   ═══════════════════════════════════════════════════════════════════
-   At 900px and below, side-by-side layouts become tighter.
-   We stack the header and About section to give content more room.
-*/
 
 @media (max-width:900px) {
   .page-shell {
@@ -229,7 +189,7 @@ a {
   }
 
   .about-section {
-    grid-template-columns: 1fr; /* Change from 2 columns to 1 column */
+    grid-template-columns: 1fr;
     gap: 28px;
     text-align: center;
   }
@@ -237,16 +197,6 @@ a {
   .about-text p {
     margin: 0 auto;
   }
-}
-
-/* ═══════════════════════════════════════════════════════════════════
-   8. MOBILE BREAKPOINT
-   ═══════════════════════════════════════════════════════════════════
-   On phones we reduce spacing and turn the hero navigation into
-   a vertical list so each link has enough tap space.
-   600px is a common breakpoint for mobile devices, but you can adjust
-   this as needed based on your design.
-*/
 
 @media (max-width:600px) {
   .page-shell {
