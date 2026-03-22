@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .container {
-            display: inline-block;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="sophie.css">
 </head>
 <body>
-    <main>
+    <main class="page shell">
         <!-- this is my header section that contains my email & social links -->
-        <header class="header-content">
-            <div>
+        <header class="site-header">
+            <div class="contact email">
                 <h2>muenisophie8@gmail.com</h2>
             </div>
 
-            <nav>
-                <ul class="social-links">
+            <nav class="social-nav" aria label="social media links">
+                <ul>
             
                     <li><a href="#">github</a></li>
                     <li><a href="#">linkedin</a></li>
@@ -34,43 +26,30 @@
         </header>
 
         <!-- First section: IMAGE, BUTTON AND PROFESSIONAL TAGLINE -->
-        <section>
-        </section>
+        <section class="hero-section">
             <!-- this is my hero section container that has my image and my name -->
-            <div class="hero-section">
-                <div>
+            <div class="hero-profile">
+                <div class="hero-image">
                     <img src="https://images.unsplash.com/photo-1586716402203-79219bede43c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvcnRyYWl0JTIwaW1hZ2VzJTIwYmxhY2slMjBtYW58ZW58MHx8MHx8fDA%3D" alt="Profile Picture" style="border-radius: 50%;" >
                 </div>
-                <div>
+
+                <div class="hero-name">
                     <p>Beatrice Mueni</p>
+                    </div>
                 </div>
 
             <!-- this is a section that has my professional tagline and a button to download my CV -->
-             <header>
-                <h3>muenisophie8@gmail.com</h3>
-
-                <nav>
-                    <a href="a">Home</a>
-                    <a href="b">Profile</a>
-                    <a href="c">Settings</a>
-                    <a href="d">Projects</a>
-                    <a href="e">Skills</a>
-                </nav>
-             </header>
-            
-                <div class="hero-text">
+             <div class="hero-content">
+                <div>
                     <h1>Turning complex problems into elegant digital solutions</h1>
                 </div>
                 <div>
                     <button> Download CV</button>
                 </div>
-            <div>
-                <img src="https://images.unsplash.com/photo-1586716402203-79219bede43c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvcnRyYWl0JTIwaW1hZ2VzJTIwYmxhY2slMjBtYW58ZW58MHx8MHx8fDA%3D" alt="Profile Picture" style="border-radius: 50%;">
             </div>
-        </section>
 
-            <nav>
-                <ul class="nav-links">
+            <nav class="hero-nav" aria-label="Portfolio sections">
+                <ul>
 
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Profile</a></li>
@@ -80,52 +59,30 @@
                 </ul>
             </nav>
         </section>
-        this is my navigation section that has links to different sections of my portfolio
-        <div class="nav-section">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                </ul>
-            </nav>
-        </div>
 
         <!-- About me Section -->
-        <section>
-            <div>
+        <section class="about-me">
+            <div class="about-me-image">
                 <img src="https://images.unsplash.com/photo-1586716402203-79219bede43c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvcnRyYWl0JTIwaW1hZ2VzJTIwYmxhY2slMjBtYW58ZW58MHx8MHx8fDA%3D" alt="Project 1" style="border-radius: 50%;">
             </div>
 
-            <div>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Est dolores ex natus, 
-                    earum quia cumque nisi eum, voluptate 
-                    voluptatem inventore eveniet debitis blanditiis 
-                    laboriosam impedit facilis non recusandae? Rem, earum.
+            <div class="about-text">
+                <P>
+                    I am a full-stack software developer with a passion for creating innovative and efficient digital solutions.
                 </p>
             </div>
         </section>
 
         <!-- Footer Section -->
-        <footer>
-            <nav>
-                <ul class="social-links">
+        <footer class="site-footer">
+            <nav class="footer-nav" aria-label="social media links">
+                <ul>
                     <li><a href="#">github</a></li>
                     <li><a href="#">linkedin</a></li>
                     <li><a href="#">youtube</a></li>
                 </ul>
             </nav>
         </footer>
-    </main>
-<body>
-    <main>
-        <div class="container">
-            <img src="https://images.unsplash.com/photo-1586716402203-79219bede43c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvcnRyYWl0JTIwaW1hZ2VzJTIwYmxhY2slMjBtYW58ZW58MHx8MHx8fDA%3D" alt="Profile Picture" style="border-radius: 50%;">
-        </div>
     </main>
 </body>
 </html>
